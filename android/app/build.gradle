@@ -119,6 +119,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-maps')
     compile project(':react-native-image-picker')
     compile project(':react-native-fs')
     compile project(':react-native-code-push')

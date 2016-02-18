@@ -1,6 +1,7 @@
 package com.lynxreact;
 
 import com.facebook.react.ReactActivity;
+import com.AirMaps.AirPackage;
 import com.imagepicker.ImagePickerPackage;
 import android.content.Intent;
 import com.rnfs.RNFSPackage;
@@ -59,6 +60,7 @@ public class MainActivity extends ReactActivity {
 
       return Arrays.<ReactPackage>asList(
         new MainReactPackage(),
+        new AirPackage(),
         new RNFSPackage(),
         mImagePicker,
         this._codePush.getReactPackage()

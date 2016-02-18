@@ -13,6 +13,7 @@
     "react-native-button": "^1.4.2",
     "react-native-code-push": "^1.7.3-beta",
     "react-native-fs": "^1.2.0",
-    "react-native-image-picker": "^0.14.3"
+    "react-native-image-picker": "^0.14.3",
+    "react-native-maps": "^0.3.0"
   }
 }
