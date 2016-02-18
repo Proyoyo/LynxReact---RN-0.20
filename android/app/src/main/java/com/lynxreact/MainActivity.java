@@ -1,6 +1,8 @@
 package com.lynxreact;
 
 import com.facebook.react.ReactActivity;
+import com.imagepicker.ImagePickerPackage;
+import android.content.Intent;
 import com.rnfs.RNFSPackage;
 import com.microsoft.codepush.react.CodePush;
 import com.facebook.react.ReactPackage;
@@ -12,6 +14,7 @@ import java.util.List;
 public class MainActivity extends ReactActivity {
 
     private CodePush _codePush;
+    private ImagePickerPackage mImagePicker;
 
     @Override
     protected String getJSBundleFile() {
@@ -36,6 +39,13 @@ public class MainActivity extends ReactActivity {
         return BuildConfig.DEBUG;
     }
 
+    @Override
+    public void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        mImagePicker.handleActivityResult(requestCode, resultCode, data);
+    }
+
    /**
    * A list of packages used by the app. If the app uses additional views
    * or modules besides the default ones, add more packages here.
@@ -43,11 +53,14 @@ public class MainActivity extends ReactActivity {
     @Override
     protected List<ReactPackage> getPackages() {
 
+      mImagePicker = new ImagePickerPackage(this);
       this._codePush = new CodePush("9OcY7WuRIwcigP2x6H5z8bTZPLN94yXS9p7Fg", this, BuildConfig.DEBUG);
+
 
       return Arrays.<ReactPackage>asList(
         new MainReactPackage(),
         new RNFSPackage(),
+        mImagePicker,
         this._codePush.getReactPackage()
       );
     }
