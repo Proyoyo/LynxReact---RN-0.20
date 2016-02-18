@@ -1,6 +1,7 @@
 package com.lynxreact;
 
 import com.facebook.react.ReactActivity;
+import com.github.yamill.orientation.OrientationPackage;
 import com.AirMaps.AirPackage;
 import com.imagepicker.ImagePickerPackage;
 import android.content.Intent;
@@ -47,6 +48,14 @@ public class MainActivity extends ReactActivity {
         mImagePicker.handleActivityResult(requestCode, resultCode, data);
     }
 
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        Intent intent = new Intent("onConfigurationChanged");
+        intent.putExtra("newConfig", newConfig);
+        this.sendBroadcast(intent);
+    }
+
    /**
    * A list of packages used by the app. If the app uses additional views
    * or modules besides the default ones, add more packages here.
@@ -60,6 +69,7 @@ public class MainActivity extends ReactActivity {
 
       return Arrays.<ReactPackage>asList(
         new MainReactPackage(),
+        new OrientationPackage(this),
         new AirPackage(),
         new RNFSPackage(),
         mImagePicker,

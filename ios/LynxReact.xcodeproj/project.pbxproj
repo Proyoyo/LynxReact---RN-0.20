@@ -28,6 +28,7 @@
 		8AF1B65C2CEF43BDB2175B3C /* libRNBlur.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D13FB802F934CDC89F10A4E /* libRNBlur.a */; };
 		9D5022A577E14AE49D21C592 /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CBAFA213CF4EBA814304E2 /* libRNImagePicker.a */; };
 		AE32CDD01C75696F003A47A6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE32CDCF1C75696F003A47A6 /* libz.tbd */; };
+		AE32CE311C7585BE003A47A6 /* Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = AE32CE301C7585BE003A47A6 /* Orientation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,6 +175,8 @@
 		81CB1D46CE314FCFBDAC4250 /* libRNFS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFS.a; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		AE32CDCF1C75696F003A47A6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		AE32CE2F1C7585BE003A47A6 /* Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Orientation.h; path = "../node_modules/react-native-orientation/RCTOrientation/Orientation.h"; sourceTree = "<group>"; };
+		AE32CE301C7585BE003A47A6 /* Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Orientation.m; path = "../node_modules/react-native-orientation/RCTOrientation/Orientation.m"; sourceTree = "<group>"; };
 		C4A1644BF7AB47B0A9295B80 /* libAirMaps.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAirMaps.a; sourceTree = "<group>"; };
 		E981B85427904F80B0A5093E /* libCodePush.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libCodePush.a; sourceTree = "<group>"; };
 		E9A85403E4304F8BA958180A /* CodePush.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = CodePush.xcodeproj; path = "../node_modules/react-native-code-push/CodePush.xcodeproj"; sourceTree = "<group>"; };
@@ -320,6 +323,8 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				AE32CE2F1C7585BE003A47A6 /* Orientation.h */,
+				AE32CE301C7585BE003A47A6 /* Orientation.m */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
 				00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */,
@@ -703,6 +708,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				AE32CE311C7585BE003A47A6 /* Orientation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
