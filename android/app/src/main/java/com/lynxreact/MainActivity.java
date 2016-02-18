@@ -1,6 +1,7 @@
 package com.lynxreact;
 
 import com.facebook.react.ReactActivity;
+import com.rnfs.RNFSPackage;
 import com.microsoft.codepush.react.CodePush;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -46,6 +47,7 @@ public class MainActivity extends ReactActivity {
 
       return Arrays.<ReactPackage>asList(
         new MainReactPackage(),
+        new RNFSPackage(),
         this._codePush.getReactPackage()
       );
     }
