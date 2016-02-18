@@ -5,6 +5,7 @@ import com.github.yamill.orientation.OrientationPackage;
 import com.AirMaps.AirPackage;
 import com.imagepicker.ImagePickerPackage;
 import android.content.Intent;
+import android.content.res.Configuration;
 import com.rnfs.RNFSPackage;
 import com.microsoft.codepush.react.CodePush;
 import com.facebook.react.ReactPackage;
