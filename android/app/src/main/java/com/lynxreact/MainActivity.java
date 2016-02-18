@@ -1,6 +1,7 @@
 package com.lynxreact;
 
 import com.facebook.react.ReactActivity;
+import com.oblador.vectoricons.VectorIconsPackage;
 import com.github.yamill.orientation.OrientationPackage;
 import com.AirMaps.AirPackage;
 import com.imagepicker.ImagePickerPackage;
@@ -71,6 +72,7 @@ public class MainActivity extends ReactActivity {
 
       return Arrays.<ReactPackage>asList(
         new MainReactPackage(),
+        new VectorIconsPackage(),
         new OrientationPackage(this),
         new AirPackage(),
         new RNFSPackage(),
