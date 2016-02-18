@@ -19,6 +19,7 @@
     "react-native-overlay": "^0.4.1",
     "react-native-router-flux": "^2.2.5",
     "react-native-sglistview": "^0.1.3",
-    "react-native-spinkit": "0.0.7"
+    "react-native-spinkit": "0.0.7",
+    "react-native-sqlite-storage": "^2.1.3"
   }
 }

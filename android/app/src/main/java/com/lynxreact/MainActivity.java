@@ -4,6 +4,7 @@ import com.facebook.react.ReactActivity;
 import com.github.yamill.orientation.OrientationPackage;
 import com.AirMaps.AirPackage;
 import com.imagepicker.ImagePickerPackage;
+import org.pgsqlite.SQLitePluginPackage;
 import android.content.Intent;
 import android.content.res.Configuration;
 import com.rnfs.RNFSPackage;
@@ -74,6 +75,7 @@ public class MainActivity extends ReactActivity {
         new AirPackage(),
         new RNFSPackage(),
         mImagePicker,
+        new SQLitePluginPackage(this),
         this._codePush.getReactPackage()
       );
     }
